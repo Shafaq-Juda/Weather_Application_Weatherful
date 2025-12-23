@@ -48,6 +48,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 10px;
 }
 
 .search input{
@@ -61,6 +62,7 @@ body{
     flex: 1;
     margin-right: 16px;
     font-size: 18px;
+    min-width: 0;
 }
 
 .search button{
@@ -132,4 +134,17 @@ body{
     color: #000;
     font-size: 28px;
     margin-top: -6px;
+}
+
+@media (max-width: 480px) {
+    .search input {
+        height: 50px;
+        font-size: 16px;
+        padding: 10px 18px;
+    }
+
+    .search button {
+        width: 50px;
+        height: 50px;
+    }
 }
